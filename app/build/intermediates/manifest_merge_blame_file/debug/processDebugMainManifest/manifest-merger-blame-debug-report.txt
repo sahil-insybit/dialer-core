@@ -1,0 +1,396 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.fayyaztech.dialer_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="36" />
+10
+11    <!-- Telephony permissions are declared in the dialer-core module and merged in. -->
+12
+13
+14    <!-- Needed to upload recordings to the API -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:7:5-67
+15-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:7:22-64
+16
+17    <!-- Core telephony permissions required by the dialer core module -->
+18    <uses-permission android:name="android.permission.CALL_PHONE" />
+18-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:5-69
+18-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:22-66
+19    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+19-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:5-75
+19-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:22-72
+20    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+20-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:5-72
+20-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:22-69
+21    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+21-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:5-71
+21-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:22-68
+22    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+22-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:5-80
+22-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:22-77
+23    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+23-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:5-77
+23-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:22-74
+24    <uses-permission android:name="android.permission.READ_PRECISE_PHONE_STATE" />
+24-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:5-83
+24-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:22-80
+25    <uses-permission android:name="android.permission.READ_CONTACTS" />
+25-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:5-72
+25-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:22-69
+26    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+26-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:17:5-73
+26-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:17:22-70
+27    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+27-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:18:5-73
+27-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:18:22-70
+28    <uses-permission android:name="android.permission.SEND_SMS" />
+28-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:19:5-67
+28-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:19:22-64
+29    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+29-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:20:5-77
+29-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:20:22-74
+30    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL" />
+30-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:21:5-88
+30-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:21:22-85
+31    <uses-permission android:name="android.permission.WAKE_LOCK" />
+31-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:22:5-68
+31-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:22:22-65
+32    <uses-permission android:name="android.permission.VIBRATE" /> <!-- OEM compatibility for write-call-log on older devices -->
+32-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:23:5-66
+32-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:23:22-63
+33    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" /> <!-- Android 13+ notifications runtime permission -->
+33-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:26:5-28:37
+33-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:27:9-65
+34    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+34-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:31:5-77
+34-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:31:22-74
+35    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" /> <!-- Telephony feature requirements (optional for development/testing) -->
+35-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:32:5-34:49
+35-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:33:9-65
+36    <uses-feature
+36-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:37:5-39:36
+37        android:name="android.hardware.telephony"
+37-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:38:9-50
+38        android:required="false" />
+38-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:39:9-33
+39    <uses-feature
+39-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:40:5-42:36
+40        android:name="android.hardware.telephony.gsm"
+40-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:41:9-54
+41        android:required="false" />
+41-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:42:9-33
+42    <uses-feature
+42-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:43:5-45:36
+43        android:name="android.hardware.telephony.cdma"
+43-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:44:9-55
+44        android:required="false" />
+44-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:45:9-33
+45
+46    <permission
+46-->[androidx.core:core:1.17.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\103fbbb32220ae549d131f04a614c274\transformed\core-1.17.0\AndroidManifest.xml:22:5-24:47
+47        android:name="com.fayyaztech.dialer_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+47-->[androidx.core:core:1.17.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\103fbbb32220ae549d131f04a614c274\transformed\core-1.17.0\AndroidManifest.xml:23:9-81
+48        android:protectionLevel="signature" />
+48-->[androidx.core:core:1.17.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\103fbbb32220ae549d131f04a614c274\transformed\core-1.17.0\AndroidManifest.xml:24:9-44
+49
+50    <uses-permission android:name="com.fayyaztech.dialer_app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+50-->[androidx.core:core:1.17.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\103fbbb32220ae549d131f04a614c274\transformed\core-1.17.0\AndroidManifest.xml:26:5-97
+50-->[androidx.core:core:1.17.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\103fbbb32220ae549d131f04a614c274\transformed\core-1.17.0\AndroidManifest.xml:26:22-94
+51
+52    <application
+52-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:9:5-49:19
+53        android:allowBackup="true"
+53-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:10:9-35
+54        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+54-->[androidx.core:core:1.17.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\103fbbb32220ae549d131f04a614c274\transformed\core-1.17.0\AndroidManifest.xml:28:18-86
+55        android:debuggable="true"
+56        android:extractNativeLibs="false"
+57        android:icon="@drawable/ic_launcher_fallback"
+57-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:11:9-54
+58        android:label="@string/app_name"
+58-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:12:9-41
+59        android:supportsRtl="true"
+59-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:13:9-35
+60        android:theme="@style/Theme.DialerApp"
+60-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:15:9-47
+61        android:usesCleartextTraffic="true" >
+61-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:14:9-44
+62        <activity
+62-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:17:9-46:20
+63            android:name="com.fayyaztech.dialer_app.MainActivity"
+63-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:18:13-41
+64            android:exported="true"
+64-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:19:13-36
+65            android:theme="@style/Theme.DialerApp" >
+65-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:20:13-51
+66            <intent-filter>
+66-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:22:13-25:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:23:17-69
+67-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:23:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:24:17-77
+69-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:24:27-74
+70            </intent-filter>
+71
+72            <!-- Dialer intent filters so this app can be a phone/dialer app -->
+73            <intent-filter>
+73-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:28:13-31:29
+74                <action android:name="android.intent.action.DIAL" />
+74-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:29:17-69
+74-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:29:25-66
+75
+76                <category android:name="android.intent.category.DEFAULT" />
+76-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:30:17-76
+76-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:30:27-73
+77            </intent-filter>
+78            <intent-filter>
+78-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:33:13-38:29
+79                <action android:name="android.intent.action.DIAL" />
+79-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:29:17-69
+79-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:29:25-66
+80                <action android:name="android.intent.action.CALL" />
+80-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:35:17-69
+80-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:35:25-66
+81
+82                <category android:name="android.intent.category.DEFAULT" />
+82-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:30:17-76
+82-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:30:27-73
+83
+84                <data android:scheme="tel" />
+84-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:37:17-46
+84-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:37:23-43
+85            </intent-filter>
+86            <intent-filter>
+86-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:40:13-45:29
+87                <action android:name="android.intent.action.VIEW" />
+87-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:41:17-69
+87-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:41:25-66
+88
+89                <category android:name="android.intent.category.DEFAULT" />
+89-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:30:17-76
+89-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:30:27-73
+90                <category android:name="android.intent.category.BROWSABLE" />
+90-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:43:17-78
+90-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:43:27-75
+91
+92                <data android:scheme="tel" />
+92-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:37:17-46
+92-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:37:23-43
+93            </intent-filter>
+94        </activity>
+95
+96        <!-- CallScreenActivity and all telephony services come from dialer-core via manifest merge -->
+97        <!-- In-Call Screen Activity -->
+98        <activity
+98-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:50:9-66:20
+99            android:name="com.fayyaztech.dialer_core.ui.call.CallScreenActivity"
+99-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:51:13-81
+100            android:excludeFromRecents="true"
+100-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:52:13-46
+101            android:exported="true"
+101-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:53:13-36
+102            android:launchMode="singleTop"
+102-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:54:13-43
+103            android:showForAllUsers="true"
+103-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:55:13-43
+104            android:showWhenLocked="true"
+104-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:56:13-42
+105            android:turnScreenOn="true" >
+105-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:57:13-40
+106            <intent-filter>
+106-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:59:13-65:29
+107                <action android:name="android.intent.action.VIEW" />
+107-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:41:17-69
+107-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:41:25-66
+108
+109                <category android:name="android.intent.category.DEFAULT" />
+109-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:30:17-76
+109-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:30:27-73
+110
+111                <data android:scheme="tel" />
+111-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:37:17-46
+111-->C:\Users\AB COM\Desktop\dialer-core\app\src\main\AndroidManifest.xml:37:23-43
+112            </intent-filter>
+113        </activity> <!-- Call State Observer Service (foreground service for call monitoring) -->
+114        <service
+114-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:69:9-73:57
+115            android:name="com.fayyaztech.dialer_core.services.CallStateObserverService"
+115-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:70:13-88
+116            android:enabled="true"
+116-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:71:13-35
+117            android:exported="false"
+117-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:72:13-37
+118            android:foregroundServiceType="phoneCall" /> <!-- Default InCall Service (binds to Telecom framework) -->
+118-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:73:13-54
+119        <service
+119-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:76:9-103:19
+120            android:name="com.fayyaztech.dialer_core.services.DefaultInCallService"
+120-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:77:13-84
+121            android:exported="true"
+121-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:78:13-36
+122            android:foregroundServiceType="phoneCall"
+122-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:79:13-54
+123            android:permission="android.permission.BIND_INCALL_SERVICE" >
+123-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:80:13-72
+124
+125            <!-- Advertise that this service plays ringtones for incoming calls -->
+126            <!-- <meta-data -->
+127            <!-- android:name="android.telecom.IN_CALL_SERVICE_RINGING" -->
+128            <!-- android:value="false" /> -->
+129            <!-- Advertise basic in-call UI capability (Android 12+) -->
+130            <meta-data
+130-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:88:13-90:40
+131                android:name="android.telecom.IN_CALL_SERVICE_UI"
+131-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:89:17-66
+132                android:value="true" />
+132-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:90:17-37
+133            <!-- Call streaming support (set to false unless app supports it) -->
+134            <meta-data
+134-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:92:13-94:41
+135                android:name="android.telecom.IN_CALL_SERVICE_SUPPORTS_CALL_STREAMING"
+135-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:93:17-87
+136                android:value="false" />
+136-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:94:17-38
+137            <!-- Video calling support (Android 12-14) -->
+138            <meta-data
+138-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:96:13-98:41
+139                android:name="android.telecom.IN_CALL_SERVICE_SUPPORTS_VIDEO_CALLING"
+139-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:97:17-86
+140                android:value="false" />
+140-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:98:17-38
+141            <!-- Intent filter for InCallService binding -->
+142            <intent-filter>
+142-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:100:13-102:29
+143                <action android:name="android.telecom.InCallService" />
+143-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:101:17-72
+143-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:101:25-69
+144            </intent-filter>
+145        </service> <!-- Call Screening Service (for spam detection / call blocking) -->
+146        <service
+146-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:106:9-115:19
+147            android:name="com.fayyaztech.dialer_core.services.CallScreeningService"
+147-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:107:13-84
+148            android:exported="true"
+148-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:108:13-36
+149            android:permission="android.permission.BIND_SCREENING_SERVICE" >
+149-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:109:13-75
+150            <intent-filter>
+150-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:112:13-114:29
+151                <action android:name="android.telecom.CallScreeningService" />
+151-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:113:17-79
+151-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:113:25-76
+152            </intent-filter>
+153        </service> <!-- Incoming Call Receiver (handles PHONE_STATE broadcasts) -->
+154        <receiver
+154-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:118:9-125:20
+155            android:name="com.fayyaztech.dialer_core.services.IncomingCallReceiver"
+155-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:119:13-84
+156            android:enabled="true"
+156-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:120:13-35
+157            android:exported="false" >
+157-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:121:13-37
+158            <intent-filter android:priority="100" >
+158-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:122:13-124:29
+158-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:122:28-50
+159                <action android:name="android.intent.action.PHONE_STATE" />
+159-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:123:17-76
+159-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:123:25-73
+160            </intent-filter>
+161        </receiver> <!-- Call Action Receiver (handles notification actions: accept/reject/hangup) -->
+162        <receiver
+162-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:128:9-132:20
+163            android:name="com.fayyaztech.dialer_core.services.CallActionReceiver"
+163-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:129:13-82
+164            android:enabled="true"
+164-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:130:13-35
+165            android:exported="false" >
+165-->[:dialer-core] C:\Users\AB COM\Desktop\dialer-core\dialer-core\build\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:131:13-37
+166        </receiver>
+167
+168        <activity
+168-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\3e91b9d077d39d098d2da589856d688a\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+169            android:name="androidx.compose.ui.tooling.PreviewActivity"
+169-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\3e91b9d077d39d098d2da589856d688a\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+170            android:exported="true" />
+170-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\3e91b9d077d39d098d2da589856d688a\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+171        <activity
+171-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\1ca157cbde295b01e2287babd5c53277\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:23:9-25:39
+172            android:name="androidx.activity.ComponentActivity"
+172-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\1ca157cbde295b01e2287babd5c53277\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:24:13-63
+173            android:exported="true" />
+173-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\1ca157cbde295b01e2287babd5c53277\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:25:13-36
+174
+175        <provider
+175-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\c9c3ad57c08550096a51ca5f835fa2f0\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+176            android:name="androidx.startup.InitializationProvider"
+176-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\c9c3ad57c08550096a51ca5f835fa2f0\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+177            android:authorities="com.fayyaztech.dialer_app.androidx-startup"
+177-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\c9c3ad57c08550096a51ca5f835fa2f0\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+178            android:exported="false" >
+178-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\c9c3ad57c08550096a51ca5f835fa2f0\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+179            <meta-data
+179-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\c9c3ad57c08550096a51ca5f835fa2f0\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+180                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+180-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\c9c3ad57c08550096a51ca5f835fa2f0\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+181                android:value="androidx.startup" />
+181-->[androidx.emoji2:emoji2:1.3.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\c9c3ad57c08550096a51ca5f835fa2f0\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+182            <meta-data
+182-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\AB COM\.gradle\caches\8.13\transforms\6c71784f5c33a1044aadeb32f303ba49\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:29:13-31:52
+183                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+183-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\AB COM\.gradle\caches\8.13\transforms\6c71784f5c33a1044aadeb32f303ba49\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:30:17-78
+184                android:value="androidx.startup" />
+184-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\AB COM\.gradle\caches\8.13\transforms\6c71784f5c33a1044aadeb32f303ba49\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:31:17-49
+185            <meta-data
+185-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+186                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+186-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+187                android:value="androidx.startup" />
+187-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+188        </provider>
+189
+190        <receiver
+190-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+191            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+191-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+192            android:directBootAware="false"
+192-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+193            android:enabled="true"
+193-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+194            android:exported="true"
+194-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+195            android:permission="android.permission.DUMP" >
+195-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+196            <intent-filter>
+196-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+197                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+197-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+197-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+198            </intent-filter>
+199            <intent-filter>
+199-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+200                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+200-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+200-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+201            </intent-filter>
+202            <intent-filter>
+202-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+203                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+203-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+203-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+204            </intent-filter>
+205            <intent-filter>
+205-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+206                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+206-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+206-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\AB COM\.gradle\caches\8.13\transforms\4e18c7276f07cef5f1664ef183924fbd\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+207            </intent-filter>
+208        </receiver>
+209    </application>
+210
+211</manifest>

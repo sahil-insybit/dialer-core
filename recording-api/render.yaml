@@ -1,0 +1,20 @@
+# Render deployment config.
+# When you connect this repo on render.com, Render reads this file and sets up
+# the service automatically. You still paste the 3 Cloudinary secret values in
+# the Render dashboard (they are marked sync:false so they are NOT stored in git).
+services:
+  - type: web
+    name: call-recording-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: API_KEY
+        sync: false

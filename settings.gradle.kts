@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "dialer-core"
 include(":dialer-core")
+include(":app")
